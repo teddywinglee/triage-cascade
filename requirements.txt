@@ -1,0 +1,10 @@
+# Install PyTorch FIRST with CUDA (PyPI's Windows torch is CPU-only):
+#   pip install torch --index-url https://download.pytorch.org/whl/cu130
+# then:
+#   pip install -r requirements.txt
+# Versions below are the ones the results in the README were produced with.
+laya==0.3.22
+langgraph==1.2.12
+langchain-openai==1.6.6
+fastapi==0.142.1
+uvicorn==0.54.0

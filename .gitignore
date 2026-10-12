@@ -1,0 +1,19 @@
+# Python
+.venv/
+__pycache__/
+*.pyc
+.pytest_cache/
+.ruff_cache/
+
+# Local scratch databases (the committed demo snapshot lives in sample_data/)
+data/
+
+# Frontend
+web/node_modules/
+web/dist/
+web/tsconfig.tsbuildinfo
+
+# Env / editor
+.env
+.vscode/
+.idea/
