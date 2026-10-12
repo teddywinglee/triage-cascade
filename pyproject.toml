@@ -21,6 +21,7 @@ packages = ["pipeline", "api"]
 
 [tool.pytest.ini_options]
 testpaths = ["tests"]
+pythonpath = ["."]  # so `pytest` (not only `python -m pytest`) finds pipeline/ and api/
 
 [tool.ruff]
 line-length = 120
