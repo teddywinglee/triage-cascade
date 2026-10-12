@@ -7,6 +7,11 @@ ROOT = Path(__file__).resolve().parent.parent
 DATA_DIR = ROOT / "data"
 DB_PATH = Path(os.environ.get("TRIAGE_DB", DATA_DIR / "triage.sqlite"))
 
+# Results from the run described in the README, committed so the dashboard works
+# without a GPU or a local LLM. The API falls back to it when DB_PATH doesn't exist.
+SAMPLE_DIR = ROOT / "sample_data"
+SAMPLE_DB_PATH = SAMPLE_DIR / "triage.sqlite"
+
 # Any OpenAI-compatible server works; LM Studio's default local address is used here.
 LLM_BASE_URL = os.environ.get("LLM_BASE_URL", "http://localhost:1234/v1")
 LLM_MODEL = os.environ.get("LLM_MODEL", "gemma-4-12b-it")

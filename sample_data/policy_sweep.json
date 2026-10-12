@@ -1,0 +1,1295 @@
+[
+ {
+  "policy": {
+   "name": "classifier_only",
+   "confidence": 0.0,
+   "churn_screen": null,
+   "churn_screen_neutral": true,
+   "refund_check": null,
+   "churn_keep": 0.5,
+   "refund_keep": 0.7,
+   "urgency_t1": 1.6553,
+   "urgency_t2": 1.841
+  },
+  "n": 450,
+  "escalated": 0,
+  "escalation_rate": 0.0,
+  "reasons": {},
+  "sentiment": 0.7222,
+  "department": 0.7044,
+  "urgency": 0.52,
+  "churn": {
+   "precision": 0.6667,
+   "recall": 0.0328,
+   "f1": 0.0625
+  },
+  "refund": {
+   "precision": 0.7115,
+   "recall": 0.9024,
+   "f1": 0.7957
+  },
+  "seconds_per_ticket": 0.0208,
+  "total_minutes": 0.16
+ },
+ {
+  "policy": {
+   "name": "llm_only",
+   "confidence": 1.01,
+   "churn_screen": null,
+   "churn_screen_neutral": true,
+   "refund_check": null,
+   "churn_keep": 0.5,
+   "refund_keep": 0.7,
+   "urgency_t1": 1.6553,
+   "urgency_t2": 1.841
+  },
+  "n": 450,
+  "escalated": 450,
+  "escalation_rate": 1.0,
+  "reasons": {
+   "always": 450
+  },
+  "sentiment": 0.8267,
+  "department": 0.9667,
+  "urgency": 0.5356,
+  "churn": {
+   "precision": 1.0,
+   "recall": 1.0,
+   "f1": 1.0
+  },
+  "refund": {
+   "precision": 0.8039,
+   "recall": 1.0,
+   "f1": 0.8913
+  },
+  "seconds_per_ticket": 1.3333,
+  "total_minutes": 10.0
+ },
+ {
+  "policy": {
+   "name": "c0.0_ch-off_rf0.5",
+   "confidence": 0.0,
+   "churn_screen": null,
+   "churn_screen_neutral": false,
+   "refund_check": 0.5,
+   "churn_keep": 0.5,
+   "refund_keep": 0.7,
+   "urgency_t1": 1.6553,
+   "urgency_t2": 1.841
+  },
+  "n": 450,
+  "escalated": 66,
+  "escalation_rate": 0.1467,
+  "reasons": {
+   "refund_check": 66
+  },
+  "sentiment": 0.7333,
+  "department": 0.7533,
+  "urgency": 0.5267,
+  "churn": {
+   "precision": 1.0,
+   "recall": 0.1967,
+   "f1": 0.3288
+  },
+  "refund": {
+   "precision": 1.0,
+   "recall": 0.9268,
+   "f1": 0.962
+  },
+  "seconds_per_ticket": 0.2188,
+  "total_minutes": 1.64
+ },
+ {
+  "policy": {
+   "name": "c0.0_ch-neg_rfoff",
+   "confidence": 0.0,
+   "churn_screen": 0.005,
+   "churn_screen_neutral": false,
+   "refund_check": null,
+   "churn_keep": 0.5,
+   "refund_keep": 0.7,
+   "urgency_t1": 1.6553,
+   "urgency_t2": 1.841
+  },
+  "n": 450,
+  "escalated": 76,
+  "escalation_rate": 0.1689,
+  "reasons": {
+   "churn_screen": 76
+  },
+  "sentiment": 0.7222,
+  "department": 0.7267,
+  "urgency": 0.5244,
+  "churn": {
+   "precision": 1.0,
+   "recall": 0.5082,
+   "f1": 0.6739
+  },
+  "refund": {
+   "precision": 0.8043,
+   "recall": 0.9024,
+   "f1": 0.8506
+  },
+  "seconds_per_ticket": 0.2503,
+  "total_minutes": 1.88
+ },
+ {
+  "policy": {
+   "name": "c0.0_ch-neg_rf0.5",
+   "confidence": 0.0,
+   "churn_screen": 0.005,
+   "churn_screen_neutral": false,
+   "refund_check": 0.5,
+   "churn_keep": 0.5,
+   "refund_keep": 0.7,
+   "urgency_t1": 1.6553,
+   "urgency_t2": 1.841
+  },
+  "n": 450,
+  "escalated": 116,
+  "escalation_rate": 0.2578,
+  "reasons": {
+   "refund_check": 66,
+   "churn_screen": 76
+  },
+  "sentiment": 0.7333,
+  "department": 0.7556,
+  "urgency": 0.5267,
+  "churn": {
+   "precision": 1.0,
+   "recall": 0.5246,
+   "f1": 0.6882
+  },
+  "refund": {
+   "precision": 0.95,
+   "recall": 0.9268,
+   "f1": 0.9383
+  },
+  "seconds_per_ticket": 0.3687,
+  "total_minutes": 2.77
+ },
+ {
+  "policy": {
+   "name": "c0.0_ch-neg+neu_rfoff",
+   "confidence": 0.0,
+   "churn_screen": 0.005,
+   "churn_screen_neutral": true,
+   "refund_check": null,
+   "churn_keep": 0.5,
+   "refund_keep": 0.7,
+   "urgency_t1": 1.6553,
+   "urgency_t2": 1.841
+  },
+  "n": 450,
+  "escalated": 84,
+  "escalation_rate": 0.1867,
+  "reasons": {
+   "churn_screen": 84
+  },
+  "sentiment": 0.72,
+  "department": 0.7333,
+  "urgency": 0.52,
+  "churn": {
+   "precision": 1.0,
+   "recall": 0.5246,
+   "f1": 0.6882
+  },
+  "refund": {
+   "precision": 0.8222,
+   "recall": 0.9024,
+   "f1": 0.8605
+  },
+  "seconds_per_ticket": 0.2735,
+  "total_minutes": 2.05
+ },
+ {
+  "policy": {
+   "name": "c0.0_ch-neg+neu_rf0.5",
+   "confidence": 0.0,
+   "churn_screen": 0.005,
+   "churn_screen_neutral": true,
+   "refund_check": 0.5,
+   "churn_keep": 0.5,
+   "refund_keep": 0.7,
+   "urgency_t1": 1.6553,
+   "urgency_t2": 1.841
+  },
+  "n": 450,
+  "escalated": 121,
+  "escalation_rate": 0.2689,
+  "reasons": {
+   "refund_check": 66,
+   "churn_screen": 84
+  },
+  "sentiment": 0.7267,
+  "department": 0.76,
+  "urgency": 0.5244,
+  "churn": {
+   "precision": 1.0,
+   "recall": 0.5246,
+   "f1": 0.6882
+  },
+  "refund": {
+   "precision": 0.95,
+   "recall": 0.9268,
+   "f1": 0.9383
+  },
+  "seconds_per_ticket": 0.3831,
+  "total_minutes": 2.87
+ },
+ {
+  "policy": {
+   "name": "c0.7_ch-off_rfoff",
+   "confidence": 0.7,
+   "churn_screen": null,
+   "churn_screen_neutral": false,
+   "refund_check": null,
+   "churn_keep": 0.5,
+   "refund_keep": 0.7,
+   "urgency_t1": 1.6553,
+   "urgency_t2": 1.841
+  },
+  "n": 450,
+  "escalated": 140,
+  "escalation_rate": 0.3111,
+  "reasons": {
+   "low_confidence": 140
+  },
+  "sentiment": 0.7622,
+  "department": 0.8089,
+  "urgency": 0.5289,
+  "churn": {
+   "precision": 0.9231,
+   "recall": 0.1967,
+   "f1": 0.3243
+  },
+  "refund": {
+   "precision": 0.6842,
+   "recall": 0.9512,
+   "f1": 0.7959
+  },
+  "seconds_per_ticket": 0.4336,
+  "total_minutes": 3.25
+ },
+ {
+  "policy": {
+   "name": "c0.7_ch-off_rf0.5",
+   "confidence": 0.7,
+   "churn_screen": null,
+   "churn_screen_neutral": false,
+   "refund_check": 0.5,
+   "churn_keep": 0.5,
+   "refund_keep": 0.7,
+   "urgency_t1": 1.6553,
+   "urgency_t2": 1.841
+  },
+  "n": 450,
+  "escalated": 189,
+  "escalation_rate": 0.42,
+  "reasons": {
+   "low_confidence": 140,
+   "refund_check": 66
+  },
+  "sentiment": 0.7689,
+  "department": 0.8467,
+  "urgency": 0.5356,
+  "churn": {
+   "precision": 1.0,
+   "recall": 0.3443,
+   "f1": 0.5122
+  },
+  "refund": {
+   "precision": 0.9091,
+   "recall": 0.9756,
+   "f1": 0.9412
+  },
+  "seconds_per_ticket": 0.581,
+  "total_minutes": 4.36
+ },
+ {
+  "policy": {
+   "name": "c0.7_ch-neg_rfoff",
+   "confidence": 0.7,
+   "churn_screen": 0.005,
+   "churn_screen_neutral": false,
+   "refund_check": null,
+   "churn_keep": 0.5,
+   "refund_keep": 0.7,
+   "urgency_t1": 1.6553,
+   "urgency_t2": 1.841
+  },
+  "n": 450,
+  "escalated": 205,
+  "escalation_rate": 0.4556,
+  "reasons": {
+   "low_confidence": 140,
+   "churn_screen": 76
+  },
+  "sentiment": 0.7622,
+  "department": 0.8244,
+  "urgency": 0.5333,
+  "churn": {
+   "precision": 1.0,
+   "recall": 0.5738,
+   "f1": 0.7292
+  },
+  "refund": {
+   "precision": 0.78,
+   "recall": 0.9512,
+   "f1": 0.8571
+  },
+  "seconds_per_ticket": 0.6294,
+  "total_minutes": 4.72
+ },
+ {
+  "policy": {
+   "name": "c0.7_ch-neg_rf0.5",
+   "confidence": 0.7,
+   "churn_screen": 0.005,
+   "churn_screen_neutral": false,
+   "refund_check": 0.5,
+   "churn_keep": 0.5,
+   "refund_keep": 0.7,
+   "urgency_t1": 1.6553,
+   "urgency_t2": 1.841
+  },
+  "n": 450,
+  "escalated": 232,
+  "escalation_rate": 0.5156,
+  "reasons": {
+   "low_confidence": 140,
+   "refund_check": 66,
+   "churn_screen": 76
+  },
+  "sentiment": 0.7689,
+  "department": 0.8467,
+  "urgency": 0.5356,
+  "churn": {
+   "precision": 1.0,
+   "recall": 0.5902,
+   "f1": 0.7423
+  },
+  "refund": {
+   "precision": 0.8889,
+   "recall": 0.9756,
+   "f1": 0.9302
+  },
+  "seconds_per_ticket": 0.7097,
+  "total_minutes": 5.32
+ },
+ {
+  "policy": {
+   "name": "c0.7_ch-neg+neu_rfoff",
+   "confidence": 0.7,
+   "churn_screen": 0.005,
+   "churn_screen_neutral": true,
+   "refund_check": null,
+   "churn_keep": 0.5,
+   "refund_keep": 0.7,
+   "urgency_t1": 1.6553,
+   "urgency_t2": 1.841
+  },
+  "n": 450,
+  "escalated": 209,
+  "escalation_rate": 0.4644,
+  "reasons": {
+   "low_confidence": 140,
+   "churn_screen": 84
+  },
+  "sentiment": 0.7622,
+  "department": 0.8267,
+  "urgency": 0.5333,
+  "churn": {
+   "precision": 1.0,
+   "recall": 0.5902,
+   "f1": 0.7423
+  },
+  "refund": {
+   "precision": 0.7959,
+   "recall": 0.9512,
+   "f1": 0.8667
+  },
+  "seconds_per_ticket": 0.6408,
+  "total_minutes": 4.81
+ },
+ {
+  "policy": {
+   "name": "c0.7_ch-neg+neu_rf0.5",
+   "confidence": 0.7,
+   "churn_screen": 0.005,
+   "churn_screen_neutral": true,
+   "refund_check": 0.5,
+   "churn_keep": 0.5,
+   "refund_keep": 0.7,
+   "urgency_t1": 1.6553,
+   "urgency_t2": 1.841
+  },
+  "n": 450,
+  "escalated": 234,
+  "escalation_rate": 0.52,
+  "reasons": {
+   "low_confidence": 140,
+   "refund_check": 66,
+   "churn_screen": 84
+  },
+  "sentiment": 0.7667,
+  "department": 0.8489,
+  "urgency": 0.5378,
+  "churn": {
+   "precision": 1.0,
+   "recall": 0.5902,
+   "f1": 0.7423
+  },
+  "refund": {
+   "precision": 0.8889,
+   "recall": 0.9756,
+   "f1": 0.9302
+  },
+  "seconds_per_ticket": 0.7153,
+  "total_minutes": 5.36
+ },
+ {
+  "policy": {
+   "name": "c0.8_ch-off_rfoff",
+   "confidence": 0.8,
+   "churn_screen": null,
+   "churn_screen_neutral": false,
+   "refund_check": null,
+   "churn_keep": 0.5,
+   "refund_keep": 0.7,
+   "urgency_t1": 1.6553,
+   "urgency_t2": 1.841
+  },
+  "n": 450,
+  "escalated": 185,
+  "escalation_rate": 0.4111,
+  "reasons": {
+   "low_confidence": 185
+  },
+  "sentiment": 0.7822,
+  "department": 0.8378,
+  "urgency": 0.5244,
+  "churn": {
+   "precision": 0.9444,
+   "recall": 0.2787,
+   "f1": 0.4304
+  },
+  "refund": {
+   "precision": 0.7358,
+   "recall": 0.9512,
+   "f1": 0.8298
+  },
+  "seconds_per_ticket": 0.5654,
+  "total_minutes": 4.24
+ },
+ {
+  "policy": {
+   "name": "c0.8_ch-off_rf0.5",
+   "confidence": 0.8,
+   "churn_screen": null,
+   "churn_screen_neutral": false,
+   "refund_check": 0.5,
+   "churn_keep": 0.5,
+   "refund_keep": 0.7,
+   "urgency_t1": 1.6553,
+   "urgency_t2": 1.841
+  },
+  "n": 450,
+  "escalated": 223,
+  "escalation_rate": 0.4956,
+  "reasons": {
+   "low_confidence": 185,
+   "refund_check": 66
+  },
+  "sentiment": 0.7867,
+  "department": 0.8644,
+  "urgency": 0.5267,
+  "churn": {
+   "precision": 1.0,
+   "recall": 0.377,
+   "f1": 0.5476
+  },
+  "refund": {
+   "precision": 0.9091,
+   "recall": 0.9756,
+   "f1": 0.9412
+  },
+  "seconds_per_ticket": 0.6801,
+  "total_minutes": 5.1
+ },
+ {
+  "policy": {
+   "name": "c0.8_ch-neg_rfoff",
+   "confidence": 0.8,
+   "churn_screen": 0.005,
+   "churn_screen_neutral": false,
+   "refund_check": null,
+   "churn_keep": 0.5,
+   "refund_keep": 0.7,
+   "urgency_t1": 1.6553,
+   "urgency_t2": 1.841
+  },
+  "n": 450,
+  "escalated": 242,
+  "escalation_rate": 0.5378,
+  "reasons": {
+   "low_confidence": 185,
+   "churn_screen": 76
+  },
+  "sentiment": 0.7822,
+  "department": 0.8467,
+  "urgency": 0.5267,
+  "churn": {
+   "precision": 1.0,
+   "recall": 0.6066,
+   "f1": 0.7551
+  },
+  "refund": {
+   "precision": 0.8125,
+   "recall": 0.9512,
+   "f1": 0.8764
+  },
+  "seconds_per_ticket": 0.7373,
+  "total_minutes": 5.53
+ },
+ {
+  "policy": {
+   "name": "c0.8_ch-neg_rf0.5",
+   "confidence": 0.8,
+   "churn_screen": 0.005,
+   "churn_screen_neutral": false,
+   "refund_check": 0.5,
+   "churn_keep": 0.5,
+   "refund_keep": 0.7,
+   "urgency_t1": 1.6553,
+   "urgency_t2": 1.841
+  },
+  "n": 450,
+  "escalated": 262,
+  "escalation_rate": 0.5822,
+  "reasons": {
+   "low_confidence": 185,
+   "refund_check": 66,
+   "churn_screen": 76
+  },
+  "sentiment": 0.7867,
+  "department": 0.8644,
+  "urgency": 0.5289,
+  "churn": {
+   "precision": 1.0,
+   "recall": 0.6066,
+   "f1": 0.7551
+  },
+  "refund": {
+   "precision": 0.8889,
+   "recall": 0.9756,
+   "f1": 0.9302
+  },
+  "seconds_per_ticket": 0.7971,
+  "total_minutes": 5.98
+ },
+ {
+  "policy": {
+   "name": "c0.8_ch-neg+neu_rfoff",
+   "confidence": 0.8,
+   "churn_screen": 0.005,
+   "churn_screen_neutral": true,
+   "refund_check": null,
+   "churn_keep": 0.5,
+   "refund_keep": 0.7,
+   "urgency_t1": 1.6553,
+   "urgency_t2": 1.841
+  },
+  "n": 450,
+  "escalated": 244,
+  "escalation_rate": 0.5422,
+  "reasons": {
+   "low_confidence": 185,
+   "churn_screen": 84
+  },
+  "sentiment": 0.78,
+  "department": 0.8489,
+  "urgency": 0.5289,
+  "churn": {
+   "precision": 1.0,
+   "recall": 0.6066,
+   "f1": 0.7551
+  },
+  "refund": {
+   "precision": 0.8125,
+   "recall": 0.9512,
+   "f1": 0.8764
+  },
+  "seconds_per_ticket": 0.7428,
+  "total_minutes": 5.57
+ },
+ {
+  "policy": {
+   "name": "c0.8_ch-neg+neu_rf0.5",
+   "confidence": 0.8,
+   "churn_screen": 0.005,
+   "churn_screen_neutral": true,
+   "refund_check": 0.5,
+   "churn_keep": 0.5,
+   "refund_keep": 0.7,
+   "urgency_t1": 1.6553,
+   "urgency_t2": 1.841
+  },
+  "n": 450,
+  "escalated": 264,
+  "escalation_rate": 0.5867,
+  "reasons": {
+   "low_confidence": 185,
+   "refund_check": 66,
+   "churn_screen": 84
+  },
+  "sentiment": 0.7844,
+  "department": 0.8667,
+  "urgency": 0.5311,
+  "churn": {
+   "precision": 1.0,
+   "recall": 0.6066,
+   "f1": 0.7551
+  },
+  "refund": {
+   "precision": 0.8889,
+   "recall": 0.9756,
+   "f1": 0.9302
+  },
+  "seconds_per_ticket": 0.8026,
+  "total_minutes": 6.02
+ },
+ {
+  "policy": {
+   "name": "c0.85_ch-off_rfoff",
+   "confidence": 0.85,
+   "churn_screen": null,
+   "churn_screen_neutral": false,
+   "refund_check": null,
+   "churn_keep": 0.5,
+   "refund_keep": 0.7,
+   "urgency_t1": 1.6553,
+   "urgency_t2": 1.841
+  },
+  "n": 450,
+  "escalated": 222,
+  "escalation_rate": 0.4933,
+  "reasons": {
+   "low_confidence": 222
+  },
+  "sentiment": 0.7956,
+  "department": 0.8644,
+  "urgency": 0.5089,
+  "churn": {
+   "precision": 0.9474,
+   "recall": 0.2951,
+   "f1": 0.45
+  },
+  "refund": {
+   "precision": 0.75,
+   "recall": 0.9512,
+   "f1": 0.8387
+  },
+  "seconds_per_ticket": 0.6754,
+  "total_minutes": 5.07
+ },
+ {
+  "policy": {
+   "name": "c0.85_ch-off_rf0.5",
+   "confidence": 0.85,
+   "churn_screen": null,
+   "churn_screen_neutral": false,
+   "refund_check": 0.5,
+   "churn_keep": 0.5,
+   "refund_keep": 0.7,
+   "urgency_t1": 1.6553,
+   "urgency_t2": 1.841
+  },
+  "n": 450,
+  "escalated": 254,
+  "escalation_rate": 0.5644,
+  "reasons": {
+   "low_confidence": 222,
+   "refund_check": 66
+  },
+  "sentiment": 0.8,
+  "department": 0.8889,
+  "urgency": 0.5133,
+  "churn": {
+   "precision": 1.0,
+   "recall": 0.3934,
+   "f1": 0.5647
+  },
+  "refund": {
+   "precision": 0.9091,
+   "recall": 0.9756,
+   "f1": 0.9412
+  },
+  "seconds_per_ticket": 0.7717,
+  "total_minutes": 5.79
+ },
+ {
+  "policy": {
+   "name": "c0.85_ch-neg_rfoff",
+   "confidence": 0.85,
+   "churn_screen": 0.005,
+   "churn_screen_neutral": false,
+   "refund_check": null,
+   "churn_keep": 0.5,
+   "refund_keep": 0.7,
+   "urgency_t1": 1.6553,
+   "urgency_t2": 1.841
+  },
+  "n": 450,
+  "escalated": 274,
+  "escalation_rate": 0.6089,
+  "reasons": {
+   "low_confidence": 222,
+   "churn_screen": 76
+  },
+  "sentiment": 0.7956,
+  "department": 0.8733,
+  "urgency": 0.5133,
+  "churn": {
+   "precision": 1.0,
+   "recall": 0.623,
+   "f1": 0.7677
+  },
+  "refund": {
+   "precision": 0.8298,
+   "recall": 0.9512,
+   "f1": 0.8864
+  },
+  "seconds_per_ticket": 0.8325,
+  "total_minutes": 6.24
+ },
+ {
+  "policy": {
+   "name": "c0.85_ch-neg_rf0.5",
+   "confidence": 0.85,
+   "churn_screen": 0.005,
+   "churn_screen_neutral": false,
+   "refund_check": 0.5,
+   "churn_keep": 0.5,
+   "refund_keep": 0.7,
+   "urgency_t1": 1.6553,
+   "urgency_t2": 1.841
+  },
+  "n": 450,
+  "escalated": 289,
+  "escalation_rate": 0.6422,
+  "reasons": {
+   "low_confidence": 222,
+   "refund_check": 66,
+   "churn_screen": 76
+  },
+  "sentiment": 0.8,
+  "department": 0.8889,
+  "urgency": 0.5156,
+  "churn": {
+   "precision": 1.0,
+   "recall": 0.623,
+   "f1": 0.7677
+  },
+  "refund": {
+   "precision": 0.8889,
+   "recall": 0.9756,
+   "f1": 0.9302
+  },
+  "seconds_per_ticket": 0.877,
+  "total_minutes": 6.58
+ },
+ {
+  "policy": {
+   "name": "c0.85_ch-neg+neu_rfoff",
+   "confidence": 0.85,
+   "churn_screen": 0.005,
+   "churn_screen_neutral": true,
+   "refund_check": null,
+   "churn_keep": 0.5,
+   "refund_keep": 0.7,
+   "urgency_t1": 1.6553,
+   "urgency_t2": 1.841
+  },
+  "n": 450,
+  "escalated": 276,
+  "escalation_rate": 0.6133,
+  "reasons": {
+   "low_confidence": 222,
+   "churn_screen": 84
+  },
+  "sentiment": 0.7933,
+  "department": 0.8756,
+  "urgency": 0.5156,
+  "churn": {
+   "precision": 1.0,
+   "recall": 0.623,
+   "f1": 0.7677
+  },
+  "refund": {
+   "precision": 0.8298,
+   "recall": 0.9512,
+   "f1": 0.8864
+  },
+  "seconds_per_ticket": 0.838,
+  "total_minutes": 6.29
+ },
+ {
+  "policy": {
+   "name": "c0.85_ch-neg+neu_rf0.5",
+   "confidence": 0.85,
+   "churn_screen": 0.005,
+   "churn_screen_neutral": true,
+   "refund_check": 0.5,
+   "churn_keep": 0.5,
+   "refund_keep": 0.7,
+   "urgency_t1": 1.6553,
+   "urgency_t2": 1.841
+  },
+  "n": 450,
+  "escalated": 291,
+  "escalation_rate": 0.6467,
+  "reasons": {
+   "low_confidence": 222,
+   "refund_check": 66,
+   "churn_screen": 84
+  },
+  "sentiment": 0.7978,
+  "department": 0.8911,
+  "urgency": 0.5178,
+  "churn": {
+   "precision": 1.0,
+   "recall": 0.623,
+   "f1": 0.7677
+  },
+  "refund": {
+   "precision": 0.8889,
+   "recall": 0.9756,
+   "f1": 0.9302
+  },
+  "seconds_per_ticket": 0.8825,
+  "total_minutes": 6.62
+ },
+ {
+  "policy": {
+   "name": "c0.9_ch-off_rfoff",
+   "confidence": 0.9,
+   "churn_screen": null,
+   "churn_screen_neutral": false,
+   "refund_check": null,
+   "churn_keep": 0.5,
+   "refund_keep": 0.7,
+   "urgency_t1": 1.6553,
+   "urgency_t2": 1.841
+  },
+  "n": 450,
+  "escalated": 258,
+  "escalation_rate": 0.5733,
+  "reasons": {
+   "low_confidence": 258
+  },
+  "sentiment": 0.8044,
+  "department": 0.8956,
+  "urgency": 0.5089,
+  "churn": {
+   "precision": 0.9565,
+   "recall": 0.3607,
+   "f1": 0.5238
+  },
+  "refund": {
+   "precision": 0.7843,
+   "recall": 0.9756,
+   "f1": 0.8696
+  },
+  "seconds_per_ticket": 0.7796,
+  "total_minutes": 5.85
+ },
+ {
+  "policy": {
+   "name": "c0.9_ch-off_rf0.5",
+   "confidence": 0.9,
+   "churn_screen": null,
+   "churn_screen_neutral": false,
+   "refund_check": 0.5,
+   "churn_keep": 0.5,
+   "refund_keep": 0.7,
+   "urgency_t1": 1.6553,
+   "urgency_t2": 1.841
+  },
+  "n": 450,
+  "escalated": 283,
+  "escalation_rate": 0.6289,
+  "reasons": {
+   "low_confidence": 258,
+   "refund_check": 66
+  },
+  "sentiment": 0.8089,
+  "department": 0.9111,
+  "urgency": 0.5111,
+  "churn": {
+   "precision": 1.0,
+   "recall": 0.459,
+   "f1": 0.6292
+  },
+  "refund": {
+   "precision": 0.9111,
+   "recall": 1.0,
+   "f1": 0.9535
+  },
+  "seconds_per_ticket": 0.856,
+  "total_minutes": 6.42
+ },
+ {
+  "policy": {
+   "name": "c0.9_ch-neg_rfoff",
+   "confidence": 0.9,
+   "churn_screen": 0.005,
+   "churn_screen_neutral": false,
+   "refund_check": null,
+   "churn_keep": 0.5,
+   "refund_keep": 0.7,
+   "urgency_t1": 1.6553,
+   "urgency_t2": 1.841
+  },
+  "n": 450,
+  "escalated": 307,
+  "escalation_rate": 0.6822,
+  "reasons": {
+   "low_confidence": 258,
+   "churn_screen": 76
+  },
+  "sentiment": 0.8044,
+  "department": 0.9044,
+  "urgency": 0.5133,
+  "churn": {
+   "precision": 1.0,
+   "recall": 0.6721,
+   "f1": 0.8039
+  },
+  "refund": {
+   "precision": 0.8696,
+   "recall": 0.9756,
+   "f1": 0.9195
+  },
+  "seconds_per_ticket": 0.928,
+  "total_minutes": 6.96
+ },
+ {
+  "policy": {
+   "name": "c0.9_ch-neg_rf0.5",
+   "confidence": 0.9,
+   "churn_screen": 0.005,
+   "churn_screen_neutral": false,
+   "refund_check": 0.5,
+   "churn_keep": 0.5,
+   "refund_keep": 0.7,
+   "urgency_t1": 1.6553,
+   "urgency_t2": 1.841
+  },
+  "n": 450,
+  "escalated": 316,
+  "escalation_rate": 0.7022,
+  "reasons": {
+   "low_confidence": 258,
+   "refund_check": 66,
+   "churn_screen": 76
+  },
+  "sentiment": 0.8089,
+  "department": 0.9111,
+  "urgency": 0.5133,
+  "churn": {
+   "precision": 1.0,
+   "recall": 0.6721,
+   "f1": 0.8039
+  },
+  "refund": {
+   "precision": 0.8913,
+   "recall": 1.0,
+   "f1": 0.9425
+  },
+  "seconds_per_ticket": 0.9553,
+  "total_minutes": 7.16
+ },
+ {
+  "policy": {
+   "name": "c0.9_ch-neg+neu_rfoff",
+   "confidence": 0.9,
+   "churn_screen": 0.005,
+   "churn_screen_neutral": true,
+   "refund_check": null,
+   "churn_keep": 0.5,
+   "refund_keep": 0.7,
+   "urgency_t1": 1.6553,
+   "urgency_t2": 1.841
+  },
+  "n": 450,
+  "escalated": 308,
+  "escalation_rate": 0.6844,
+  "reasons": {
+   "low_confidence": 258,
+   "churn_screen": 84
+  },
+  "sentiment": 0.8022,
+  "department": 0.9067,
+  "urgency": 0.5156,
+  "churn": {
+   "precision": 1.0,
+   "recall": 0.6721,
+   "f1": 0.8039
+  },
+  "refund": {
+   "precision": 0.8696,
+   "recall": 0.9756,
+   "f1": 0.9195
+  },
+  "seconds_per_ticket": 0.9307,
+  "total_minutes": 6.98
+ },
+ {
+  "policy": {
+   "name": "c0.9_ch-neg+neu_rf0.5",
+   "confidence": 0.9,
+   "churn_screen": 0.005,
+   "churn_screen_neutral": true,
+   "refund_check": 0.5,
+   "churn_keep": 0.5,
+   "refund_keep": 0.7,
+   "urgency_t1": 1.6553,
+   "urgency_t2": 1.841
+  },
+  "n": 450,
+  "escalated": 317,
+  "escalation_rate": 0.7044,
+  "reasons": {
+   "low_confidence": 258,
+   "refund_check": 66,
+   "churn_screen": 84
+  },
+  "sentiment": 0.8067,
+  "department": 0.9133,
+  "urgency": 0.5156,
+  "churn": {
+   "precision": 1.0,
+   "recall": 0.6721,
+   "f1": 0.8039
+  },
+  "refund": {
+   "precision": 0.8913,
+   "recall": 1.0,
+   "f1": 0.9425
+  },
+  "seconds_per_ticket": 0.958,
+  "total_minutes": 7.18
+ },
+ {
+  "policy": {
+   "name": "c0.95_ch-off_rfoff",
+   "confidence": 0.95,
+   "churn_screen": null,
+   "churn_screen_neutral": false,
+   "refund_check": null,
+   "churn_keep": 0.5,
+   "refund_keep": 0.7,
+   "urgency_t1": 1.6553,
+   "urgency_t2": 1.841
+  },
+  "n": 450,
+  "escalated": 316,
+  "escalation_rate": 0.7022,
+  "reasons": {
+   "low_confidence": 316
+  },
+  "sentiment": 0.8156,
+  "department": 0.9244,
+  "urgency": 0.5111,
+  "churn": {
+   "precision": 1.0,
+   "recall": 0.5574,
+   "f1": 0.7158
+  },
+  "refund": {
+   "precision": 0.7593,
+   "recall": 1.0,
+   "f1": 0.8632
+  },
+  "seconds_per_ticket": 0.9524,
+  "total_minutes": 7.14
+ },
+ {
+  "policy": {
+   "name": "c0.95_ch-off_rf0.5",
+   "confidence": 0.95,
+   "churn_screen": null,
+   "churn_screen_neutral": false,
+   "refund_check": 0.5,
+   "churn_keep": 0.5,
+   "refund_keep": 0.7,
+   "urgency_t1": 1.6553,
+   "urgency_t2": 1.841
+  },
+  "n": 450,
+  "escalated": 333,
+  "escalation_rate": 0.74,
+  "reasons": {
+   "low_confidence": 316,
+   "refund_check": 66
+  },
+  "sentiment": 0.8156,
+  "department": 0.9356,
+  "urgency": 0.5133,
+  "churn": {
+   "precision": 1.0,
+   "recall": 0.623,
+   "f1": 0.7677
+  },
+  "refund": {
+   "precision": 0.8367,
+   "recall": 1.0,
+   "f1": 0.9111
+  },
+  "seconds_per_ticket": 1.0043,
+  "total_minutes": 7.53
+ },
+ {
+  "policy": {
+   "name": "c0.95_ch-neg_rfoff",
+   "confidence": 0.95,
+   "churn_screen": 0.005,
+   "churn_screen_neutral": false,
+   "refund_check": null,
+   "churn_keep": 0.5,
+   "refund_keep": 0.7,
+   "urgency_t1": 1.6553,
+   "urgency_t2": 1.841
+  },
+  "n": 450,
+  "escalated": 355,
+  "escalation_rate": 0.7889,
+  "reasons": {
+   "low_confidence": 316,
+   "churn_screen": 76
+  },
+  "sentiment": 0.8156,
+  "department": 0.9311,
+  "urgency": 0.5156,
+  "churn": {
+   "precision": 1.0,
+   "recall": 0.8033,
+   "f1": 0.8909
+  },
+  "refund": {
+   "precision": 0.82,
+   "recall": 1.0,
+   "f1": 0.9011
+  },
+  "seconds_per_ticket": 1.0705,
+  "total_minutes": 8.03
+ },
+ {
+  "policy": {
+   "name": "c0.95_ch-neg_rf0.5",
+   "confidence": 0.95,
+   "churn_screen": 0.005,
+   "churn_screen_neutral": false,
+   "refund_check": 0.5,
+   "churn_keep": 0.5,
+   "refund_keep": 0.7,
+   "urgency_t1": 1.6553,
+   "urgency_t2": 1.841
+  },
+  "n": 450,
+  "escalated": 361,
+  "escalation_rate": 0.8022,
+  "reasons": {
+   "low_confidence": 316,
+   "refund_check": 66,
+   "churn_screen": 76
+  },
+  "sentiment": 0.8156,
+  "department": 0.9356,
+  "urgency": 0.5156,
+  "churn": {
+   "precision": 1.0,
+   "recall": 0.8033,
+   "f1": 0.8909
+  },
+  "refund": {
+   "precision": 0.8367,
+   "recall": 1.0,
+   "f1": 0.9111
+  },
+  "seconds_per_ticket": 1.0888,
+  "total_minutes": 8.17
+ },
+ {
+  "policy": {
+   "name": "c0.95_ch-neg+neu_rfoff",
+   "confidence": 0.95,
+   "churn_screen": 0.005,
+   "churn_screen_neutral": true,
+   "refund_check": null,
+   "churn_keep": 0.5,
+   "refund_keep": 0.7,
+   "urgency_t1": 1.6553,
+   "urgency_t2": 1.841
+  },
+  "n": 450,
+  "escalated": 355,
+  "escalation_rate": 0.7889,
+  "reasons": {
+   "low_confidence": 316,
+   "churn_screen": 84
+  },
+  "sentiment": 0.8156,
+  "department": 0.9311,
+  "urgency": 0.5156,
+  "churn": {
+   "precision": 1.0,
+   "recall": 0.8033,
+   "f1": 0.8909
+  },
+  "refund": {
+   "precision": 0.82,
+   "recall": 1.0,
+   "f1": 0.9011
+  },
+  "seconds_per_ticket": 1.0705,
+  "total_minutes": 8.03
+ },
+ {
+  "policy": {
+   "name": "c0.95_ch-neg+neu_rf0.5",
+   "confidence": 0.95,
+   "churn_screen": 0.005,
+   "churn_screen_neutral": true,
+   "refund_check": 0.5,
+   "churn_keep": 0.5,
+   "refund_keep": 0.7,
+   "urgency_t1": 1.6553,
+   "urgency_t2": 1.841
+  },
+  "n": 450,
+  "escalated": 361,
+  "escalation_rate": 0.8022,
+  "reasons": {
+   "low_confidence": 316,
+   "refund_check": 66,
+   "churn_screen": 84
+  },
+  "sentiment": 0.8156,
+  "department": 0.9356,
+  "urgency": 0.5156,
+  "churn": {
+   "precision": 1.0,
+   "recall": 0.8033,
+   "f1": 0.8909
+  },
+  "refund": {
+   "precision": 0.8367,
+   "recall": 1.0,
+   "f1": 0.9111
+  },
+  "seconds_per_ticket": 1.0888,
+  "total_minutes": 8.17
+ }
+]

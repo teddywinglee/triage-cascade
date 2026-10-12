@@ -49,3 +49,18 @@ def test_duplicate_ticket_text_is_rejected(tmp_path):
         conn.execute(sql, row)
 
 
+
+def test_sample_data_matches_current_schema():
+    from pipeline.config import SAMPLE_DB_PATH
+    from pipeline.db import SCHEMA
+
+    fresh = sqlite3.connect(":memory:")
+    fresh.executescript(SCHEMA)
+    sample = sqlite3.connect(f"file:{SAMPLE_DB_PATH}?mode=ro", uri=True)
+
+    def columns(conn):
+        names = [r[0] for r in conn.execute("SELECT name FROM sqlite_master WHERE type = 'table'")
+                 if not r[0].startswith("sqlite_")]
+        return {t: [c[1] for c in conn.execute(f"PRAGMA table_info({t})")] for t in names}
+
+    assert columns(sample) == columns(fresh)
