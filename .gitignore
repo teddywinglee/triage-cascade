@@ -1,19 +1,24 @@
-# Python
-.venv/
-__pycache__/
-*.pyc
-.pytest_cache/
-.ruff_cache/
-
-# Local scratch databases (the committed demo snapshot lives in sample_data/)
-data/
-
-# Frontend
-web/node_modules/
-web/dist/
-web/tsconfig.tsbuildinfo
-
-# Env / editor
+# Env files (protect all variants, allow .env.example)
 .env
-.vscode/
-.idea/
+.env.*
+!.env.example
+# SQLite runtime artifacts
+*.sqlite-wal
+*.sqlite-shm
+*.sqlite-journal
+# OS files
+.DS_Store
+Thumbs.db
+desktop.ini
+# Python distribution / coverage
+build/
+dist/
+*.egg-info/
+.coverage
+htmlcov/
+.mypy_cache/
+*/__pycache__/
+# TypeScript cache
+*.tsbuildinfo
+# Node modules
+*/node_modules/
